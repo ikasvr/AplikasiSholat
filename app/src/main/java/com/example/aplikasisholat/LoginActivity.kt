@@ -53,7 +53,7 @@ class LoginActivity : ComponentActivity() {
 @Composable
 fun Greeting3(name: String, modifier: Modifier = Modifier) {
    LoginScreen()
-    
+
 }
 
 @Preview(showBackground = true)

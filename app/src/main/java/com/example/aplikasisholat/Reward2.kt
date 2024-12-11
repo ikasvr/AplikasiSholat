@@ -1,6 +1,5 @@
 package com.example.aplikasisholat
 
-import android.text.Layout.Alignment
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -49,12 +48,11 @@ fun RewardScreen() {
             Row(
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
-                Repeat(times = 5) {
                     Icon(
                         imageVector = Icons.Default.Star,
                         contentDescription = "Star"
                     )
-                }
+
             }
         }
     }

@@ -1,6 +1,6 @@
 package com.example.aplikasisholat
 
-import android.text.Layout.Alignment
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
@@ -36,7 +37,7 @@ fun SuccessScreen() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Icon(
-                imageVector = Icons.Default.CloudDone,
+                imageVector = Icons.Default.Home,
                 contentDescription = "Success",
                 modifier = Modifier.size(96.dp),
                 tint = Color.White
@@ -50,18 +51,16 @@ fun SuccessScreen() {
             Spacer(modifier = Modifier.height(16.dp))
             Button(
                 onClick = { /* Aksi saat tombol "Back" ditekan */ },
-                colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(0xFF0088A7)
-                )
+
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Yellow)
+
             ) {
                 Text(text = "Back")
             }
             Spacer(modifier = Modifier.height(8.dp))
             Button(
                 onClick = { /* Aksi saat tombol "Home" ditekan */ },
-                colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(0xFF0088A7)
-                )
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Yellow)
             ) {
                 Text(text = "Home")
             }
